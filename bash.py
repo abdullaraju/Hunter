@@ -28,8 +28,8 @@ banner = """
      dZP        qKRb
     dZP          qKKb
    fZP            SMMb
-   HZM            MMMM    {}COEDED BY {}: {}ARIYAN
-{}   FqM            MMMM    {}FB       {}: {}fb.com/HunterTheAriyan
+   HZM            MMMM    {}CODE BY {}: {}ARIYAN
+{}   FqM            MMMM    {}FACEBOOK {}: {}FACEBOOK.COM/HUNTERTHEARIYAN
 {} __|'\ .        |\{}dS qML
 {} |    `.       | `' \{}Zq
 {}_)      \.{}___.{},|     .'
@@ -62,23 +62,23 @@ def dekrip():
        os.system("bash " + out + " > tes.sh")
        os.remove(out)
        os.system("mv -f tes.sh " + out)
-       print (Encript + "Done..")
+       print (sukses + "Done..")
 
    except KeyboardInterrupt:
-       print (Error + " Stopped!")
+       print (eror + " Stopped!")
    except IOError:
-       print (Error + " File Not Found!")
+       print (eror + " File Not Found!")
 
 def enkrip():
    try:
        script = raw_input(ask + W + "Script " + G + "> " + W)
        output = raw_input(ask + W + "Output " + G + "> " + W)
        os.system("bash-obfuscate " + script + " -o " + output )
-       print (Encript + "Done..")
+       print (sukses + "Done..")
    except KeyboardInterrupt:
-       print (Error + " Stopped!")
+       print (eror + " Stopped!")
    except IOError:
-       print (Error + " File Not Found!")
+       print (eror + " File Not Found!")
 
 
 takok = raw_input(W + "Choose" + G + " > ")
@@ -88,4 +88,4 @@ if takok == "1" or takok == "01":
 elif takok == "2" or takok == "02":
    dekrip()
 else:
-   print (Error + " Wrong input")
+   print (eror + " Wrong input")
